@@ -1,23 +1,32 @@
 <html>
 <head>
-	<title>Ejericio 7</title>
+	<title>Ejericio 1</title>
 </head>
 <body>
 	<?php
 
-	$num = rand(2,50);
+	$naturales = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-	while ($num != 1) {
-		echo "$num </br>";
-		if ($num%2==0) {
-			$num = $num/2;
-		}else{
-			$num = $num*3+1;
-		}
+	$factoriales = [];
+	$naturalFactorizado = 0;
+
+	// Recorro el array de naturales para hacer el factorial de cada uno
+	for ($i=0; $i < count($naturales); $i++) { 
+		array_push($factoriales, Factorial($naturales[$i]));
 	}
-		echo "$num </br>";
 
-	
+	var_dump($factoriales);
+
+	// funcion para sacar el factorial de un numero
+	function Factorial($num){ 
+    $factorial = 1; 
+    for ($i = 1; $i <= $num; $i++){ 
+      $factorial = $factorial * $i; 
+    } 
+    return $factorial; 
+	} 
+	   
+		
 
 	?>
 
