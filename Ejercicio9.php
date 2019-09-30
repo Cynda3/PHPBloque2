@@ -12,7 +12,7 @@
 	}
 
 	for ($i=0; $i < count($lados); $i++) { 
-		echo ("AreaCuadrado($lado[$i])");
+		echo (AreaCuadrado($lados[$i])."<br> ");
 	}
 	
 
