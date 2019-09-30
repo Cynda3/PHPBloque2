@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Ejericio 2</title>
+	<title>Ejericio 3</title>
 </head>
 <body>
 	<?php
@@ -20,7 +20,7 @@
 	$minNum = min($numeros);
 	$maxNum = max($numeros);
 	$media = $suma/count($numeros);
-	
+
 	echo ("<h4 style='color:blue'>$minNum</h4>");
 	echo ("<h4 style='color:green'>$maxNum</h4>");
 	echo ("<h6>La suma de todos los numeros es $suma</h6>");
